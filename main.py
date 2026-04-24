@@ -15,8 +15,15 @@ if "last_file" not in st.session_state:
     st.session_state.last_file = None
 
 # ------------------ Header ------------------
-st.title("Aphrodite Frame")
-st.caption("Make your images Instagram-ready without cropping")
+st.markdown(
+    """
+    <h1 style='text-align: center; margin-bottom: 0;'>Aphrodite Frame</h1>
+    <p style='text-align: center; color: gray; margin-top: 5px;'>
+        Make your images Instagram-ready without cropping
+    </p>
+    """,
+    unsafe_allow_html=True,
+)
 st.divider()
 
 # ------------------ Upload ------------------
