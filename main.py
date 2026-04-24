@@ -7,6 +7,29 @@ from processing import process_image
 
 st.set_page_config(page_title="Aphrodite Frame", page_icon="🖼️", layout="centered")
 
+st.markdown(
+    """
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+    .aphrodite-title {
+        font-family: 'Great Vibes', cursive !important;
+        text-align: center;
+        font-size: 6.25rem !important;
+        margin-bottom: 0;
+    }
+
+    .aphrodite-subtitle {
+        text-align: center;
+        color: gray;
+        margin-top: 5px;
+        font-size: 1.5rem !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 # ------------------ Session State ------------------
 if "processed_image" not in st.session_state:
     st.session_state.processed_image = None
@@ -17,8 +40,8 @@ if "last_file" not in st.session_state:
 # ------------------ Header ------------------
 st.markdown(
     """
-    <h1 style='text-align: center; margin-bottom: 0;'>Aphrodite Frame</h1>
-    <p style='text-align: center; color: gray; margin-top: 5px;'>
+    <h1 class="aphrodite-title">Aphrodite Frame</h1>
+    <p class="aphrodite-subtitle">
         Make your images Instagram-ready without cropping
     </p>
     """,
