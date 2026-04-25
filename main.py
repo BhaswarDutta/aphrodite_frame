@@ -5,7 +5,7 @@ from PIL import Image
 
 from processing import process_image
 
-st.set_page_config(page_title="Aphrodite Frame", page_icon="🖼️", layout="centered")
+st.set_page_config(page_title="Aphrodite Frame", page_icon="🪞", layout="centered")
 
 st.markdown(
     """
