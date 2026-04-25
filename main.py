@@ -70,6 +70,8 @@ if uploaded_file and process_clicked:
     ratio_key = "1:1" if "1:1" in ratio else "4:5"
     st.session_state.processed_image = process_image(image, ratio_key)
 
+    st.balloons()
+
 # ------------------ Preview ------------------
 st.subheader("Preview")
 
